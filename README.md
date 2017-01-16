@@ -69,14 +69,14 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 Clone the Angular-Webpack-Seed repository using [git][git]:
 
 ```
-git clone [PUT REPO URL HERE]]
-cd [DIR NAME]]
+git clone git@github.com:coreysnyder04/Angular1-Webpack-Seed.git
+cd Angular1-Webpack-Seed
 ```
 
 If you just want to start a new project without the Angular-Webpack-Seed commit history then you can do:
 
 ```bash
-git clone --depth=1 [Add REPO path here.git] <your-project-name>
+git clone --depth=1 git@github.com:coreysnyder04/Angular1-Webpack-Seed.git <your-project-name>
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
