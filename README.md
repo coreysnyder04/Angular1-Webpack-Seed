@@ -9,11 +9,11 @@
 
 ## Testing
 
-There are two kinds of tests in the aver-seed application: Unit tests and end-to-end tests.
+There are two kinds of tests in the Angular-Webpack-Seed application: Unit tests and end-to-end tests.
 
 ### Running Unit Tests
 
-The aver-seed app comes preconfigured with unit tests. These are written in
+The Angular-Webpack-Seed app comes preconfigured with unit tests. These are written in
 [Jasmine][jasmine], which we run with the [Karma Test Runner][karma]. We provide a Karma
 configuration file to run them.
 
@@ -40,8 +40,7 @@ npm run test-single-run
 ```
 
 
-# aver-seed — the seed for AngularJS apps at Aver
-
+# Angular-Webpack-Seed
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app with many of the Bower 
 and Grunt functionality replaced with Webpack.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
@@ -55,26 +54,26 @@ The seed app doesn't do much, just shows how to wire two controllers and views t
 
 ## Getting Started
 
-To get you started you can simply clone the aver-seed repository and install the dependencies:
+To get you started you can simply clone the Angular-Webpack-Seed repository and install the dependencies:
 
 ### Prerequisites
 
-You need git to clone the aver-seed repository. You can get git from
+You need git to clone the Angular-Webpack-Seed repository. You can get git from
 [http://git-scm.com/](http://git-scm.com/).
 
-We also use a number of node.js tools to initialize and test aver-seed. You must have node.js and
+We also use a number of node.js tools to initialize and test Angular-Webpack-Seed. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone aver-seed
+### Clone Angular-Webpack-Seed
 
-Clone the aver-seed repository using [git][git]:
+Clone the Angular-Webpack-Seed repository using [git][git]:
 
 ```
 git clone [PUT REPO URL HERE]]
 cd [DIR NAME]]
 ```
 
-If you just want to start a new project without the aver-seed commit history then you can do:
+If you just want to start a new project without the Angular-Webpack-Seed commit history then you can do:
 
 ```bash
 git clone --depth=1 [Add REPO path here.git] <your-project-name>
@@ -160,7 +159,7 @@ etc to function properly when an html page is opened via `file://` scheme instea
 
 ### Running the App during Development
 
-The aver-seed project comes preconfigured with a local nodejs Express server. You can start this webserver with `npm start`
+The Angular-Webpack-Seed project comes preconfigured with a local nodejs Express server. You can start this webserver with `npm start`
 
 
 ### Running the App in Production
@@ -183,7 +182,7 @@ reverse-proxying the backend server(s) and webserver(s).
 ### Travis CI
 
 [Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits
-to your repository and execute scripts such as building the app or running tests. The aver-seed
+to your repository and execute scripts such as building the app or running tests. The Angular-Webpack-Seed
 project contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
 tests when you push to GitHub.
 
