@@ -4,7 +4,7 @@ module.exports = function(config) {
   config.set({
 
     files: [
-      '../frontend-seed/app/tests.webpack.js'
+      './app/tests.webpack.js'
     ],
 
     autoWatch: true,
@@ -17,7 +17,7 @@ module.exports = function(config) {
       // Reference: http://webpack.github.io/docs/testing.html
       // Reference: https://github.com/webpack/karma-webpack
       // Convert files with webpack and load sourcemaps
-      '../frontend-seed/app/tests.webpack.js': ['webpack', 'sourcemap']
+      './app/tests.webpack.js': ['webpack', 'sourcemap']
     },
 
     junitReporter: {
