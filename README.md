@@ -1,45 +1,3 @@
-##TODO
-* Should we use ES6 syntax with the babel loader, or just stick to ES5?
-* Use UIRouter instead
-
-
-## Webpack Resources
-* http://blog.teamtreehouse.com/26017-2
-
-
-## Testing
-
-There are two kinds of tests in the Angular-Webpack-Seed application: Unit tests and end-to-end tests.
-
-### Running Unit Tests
-
-The Angular-Webpack-Seed app comes preconfigured with unit tests. These are written in
-[Jasmine][jasmine], which we run with the [Karma Test Runner][karma]. We provide a Karma
-configuration file to run them.
-
-* the configuration is found at `karma.conf.js`
-* the unit tests are found next to the code they are testing and are named as `..._test.js`.
-
-The easiest way to run the unit tests is to use the supplied npm script:
-
-```
-npm test
-```
-
-This script will start the Karma test runner to execute the unit tests. Moreover, Karma will sit and
-watch the source and test files for changes and then re-run the tests whenever any of them change.
-This is the recommended strategy; if your unit tests are being run every time you save a file then
-you receive instant feedback on any changes that break the expected code functionality.
-
-You can also ask Karma to do a single run of the tests and then exit.  This is useful if you want to
-check that a particular version of the code is operating as expected.  The project contains a
-predefined script to do this:
-
-```
-npm run test-single-run
-```
-
-
 # Angular-Webpack-Seed
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app with many of the Bower 
 and Grunt functionality replaced with Webpack.
@@ -49,7 +7,10 @@ projects.
 The seed contains a sample AngularJS application and is preconfigured to install the Angular
 framework and a bunch of development and testing tools for instant web development gratification.
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
+The seed app does not do much, just shows how to...
+ * wire two controllers and views together
+ * use services, filters, and directives
+ * and how to unit test it all.
 
 
 ## Getting Started
@@ -175,6 +136,36 @@ If your Angular app is talking to the backend server via xhr or other means, you
 out what is the best way to host the static files to comply with the same origin policy if
 applicable. Usually this is done by hosting the files by the backend server or through
 reverse-proxying the backend server(s) and webserver(s).
+
+## Testing
+
+### Running Unit Tests
+
+The Angular-Webpack-Seed app comes preconfigured with unit tests. These are written in
+[Jasmine][jasmine], which we run with the [Karma Test Runner][karma]. We provide a Karma
+configuration file to run them.
+
+* the configuration is found at `karma.conf.js`
+* the unit tests are found next to the code they are testing and are named as `..._test.js`.
+
+The easiest way to run the unit tests is to use the supplied npm script:
+
+```
+npm test
+```
+
+This script will start the Karma test runner to execute the unit tests. Moreover, Karma will sit and
+watch the source and test files for changes and then re-run the tests whenever any of them change.
+This is the recommended strategy; if your unit tests are being run every time you save a file then
+you receive instant feedback on any changes that break the expected code functionality.
+
+You can also ask Karma to do a single run of the tests and then exit.  This is useful if you want to
+check that a particular version of the code is operating as expected.  The project contains a
+predefined script to do this:
+
+```
+npm run test-single-run
+```
 
 
 ## Continuous Integration
