@@ -7,12 +7,17 @@ var viewsModule = require('./views/index.views');
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-  angularRoute,
-  viewsModule,
-  versionModule
+    angularRoute,
+    viewsModule,
+    versionModule
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
+
+
+    $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
